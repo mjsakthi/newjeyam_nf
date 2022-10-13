@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>Jeyam Industries</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+</head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      * {
+      box-sizing: border-box;
+      }
+      html, body {
+      min-height: 100vh;
+      padding: 0;
+      margin: 0;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px; 
+      color: #666;
+      }
+      input, textarea { 
+      outline: none;
+      }
+      body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      background: #a7d163;
+      }
+      h1 {
+      margin-top: 0;
+      font-weight: 500;
+      }
+      form {
+      position: relative;
+      width: 100%;
+      border-radius: 30px;
+      background: #fff;
+      }
+      .form-left-decoration,
+      .form-right-decoration {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 20px;
+      border-radius: 20px;
+      background: #ffffff;
+      }
+      .form-left-decoration {
+      bottom: 60px;
+      left: -30px;
+      }
+      .form-right-decoration {
+      top: 60px;
+      right: -30px;
+      }
+      .form-left-decoration:before,
+      .form-left-decoration:after,
+      .form-right-decoration:before,
+      .form-right-decoration:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 20px;
+      border-radius: 30px;
+      background: #fff;
+      }
+      .form-left-decoration:before {
+      top: -20px;
+      }
+      .form-left-decoration:after {
+      top: 20px;
+      left: 10px;
+      }
+      .form-right-decoration:before {
+      top: -20px;
+      right: 0;
+      }
+      .form-right-decoration:after {
+      top: 20px;
+      right: 10px;
+      }
+      .circle {
+      position: absolute;
+      bottom: 80px;
+      left: -55px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #fff;
+      }
+      .form-inner {
+      padding: 40px;
+      }
+      .form-inner input,
+      .form-inner textarea {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 20px;
+      background: #d0dfe8;
+      }
+      .form-inner textarea {
+      resize: none;
+      }
+      button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 20px;
+      border: none;
+      border-bottom: 4px solid #3e4f24;
+      background: #f71717; 
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      }
+      button:hover {
+      background: #3e4f24;
+      } 
+      @media (min-width: 568px) {
+      form {
+      width: 100%;
+      }
+      }
+    </style>
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+	
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+		</div>
+	</div>
+	<!-- eof .modal -->
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+			<!-- template sections -->
+			<section class="page_toplogo ls section_padding_top_5 section_padding_bottom_5 toggler_right">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-md-center"> <a href="index.html" class="logo top_logo">
+                    <img src="images/logoo.png" alt="" width="100px">
+                </a>
+							<!-- header toggler --><span class="toggle_menu"><span></span></span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<header class="page_header header_white columns_margin_0">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<!-- main nav start -->
+							<nav class="mainmenu_wrapper">
+								<ul class="mainmenu nav sf-menu">
+									<li> <a href="index.html">Home</a> </li>
+									<li> <a href="about.html">About</a> </li>
+									<li > <a href="#">Products</a>
+										<ul>
+											<li> <a href="jeyam-natural-ghee.html">Natural Ghee/இயற்கை நெய் </a> </li>
+											<li> <a href="jeyam-raw-wild-honey.html">Wild Raw Honey/காட்டுத்தேன்</a> </li>
+											<li> <a href="jeyam-nattu-sarkarai-jaggery-powder.html">Nattu Sarkarai/நாட்டு சக்கரை </a> </li>
+											<li> <a href="jeyam-kai-kuthal-arisi-hand-pounded-rice.html">Kaikuthal Arisi/கை குத்தல் அரிசி </a> </li>
+											<li> <a href="jeyam-chekku-gingelly-oil.html">Chekku Gingelly Oil/செக்கு நல்லெண்ணெய்</a> </li>
+											<li> <a href="jeyam-chekku-coconut-oil	.html">Chekku Coconut Oil/செக்கு தேங்காய் எண்ணெய்</a> </li>
+											<li> <a href="jeyam-chekku-groundnut-oil.html">Chekku Groundnut Oil/செக்கு நிலக்கடலை எண்ணெய்</a> </li>
+										</ul>
+									</li>
+									
+									<li> <a href="dealers-wanted.html">Dealers Wanted</a> </li>
+									<li> <a href="media.html"> Media</a> </li>
+									<li class="active"> <a href="Online-enquiry.html">Online Enquiry</a> </li>
+									<li> <a href="contact.html">Contact</a> </li>
+										
+									<!-- eof contacts -->
+								</ul>
+							</nav>
+							<!-- eof main nav -->
+						</div>
+					</div>
+				</div>
+				
+			</header>
+	
+</body>
+
+
+</html>
+			<section class="page_breadcrumbs ds parallax section_padding_top_75 section_padding_bottom_75" style="background: url(images/sixpic.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="text-uppercase">ONLINE ENQUIRY</h2>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="ls columns_padding_25 section_padding_top_100 section_padding_bottom_100">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3 class="module-header">ONLINE SUPPORT FORM</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8 to_animate" data-animation="scaleAppear">
+							<div id="ff-compose"></div>
+							<script async defer src="https://formfacade.com/include/118207875896776886346/form/1FAIpQLSceYcA7eWTT3gTO59QEh3bFT9WLVqGIKIyy4owsciaWGUmMTA/clean.js?div=ff-compose"></script>
+							<!-- <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe4dGbggId0KK1CVsWk7fGaWJzb9YkzlWPRBcG1QjRGCNE21g/formResponse"width="640" height="812" frameborder="0" marginheight="0" marginwidth="0"></form> -->
+								<!-- <div class="form-left-decoration"></div><div></div>
+									<div class="form-right-decoration"></div>
+								<div class="circle"></div>
+								<div class="form-inner">
+								  <input type="text"name="entry.2005620554" placeholder="Name" required>
+								  <input type="text" name= "entry.1166974658"placeholder="Phone Number"  required>
+								  <input type="email"name="entry.1045781291"placeholder="Email"  required>
+								  <textarea placeholder="Message..." rows="5" name="entry.839337160"></textarea>
+								  <button type="submit" >Submit</button> -->
+
+								  <style>
+									div#ff-compose div.ff-button-bar button{
+										display: block;
+									}
+									div#ff-compose div button{
+										display: none;
+									}
+									.ff-section a img{
+										display: none !important;
+									}
+								</style>
+								</div>
+						</div>
+						<div class="col-md-4 to_animate" data-animation="scaleAppear">
+							<ul class="list1 no-bullets no-top-border no-bottom-border">
+								<li>
+									<div class="media">
+										<div class="media-left"> <i class="rt-icon2-shop highlight2 fontsize_18"></i> </div>
+										<div class="media-body">
+											<h5 class="media-heading grey">Support:</h5> Need assistance in choosing our products or want to discuss more… 
+											
+											 </div>
+									</div>
+								</li>
+								<li>
+									<div class="media">
+										<div class="media-left"> <i class="rt-icon2-phone5 highlight2 fontsize_18"></i> </div>
+										<div class="media-body">
+											<h5 class="media-heading grey">Phone:</h5><strong><i class="fa fa-phone" aria-hidden="true" style="color: blue;"><strong>+91 73737 07122</strong></i>  <br><a href="https://api.whatsapp.com/send?phone=917373707124" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true" style="color: green;"><strong>+91 73737 07124</strong></i></a></strong></div>
+									</div>
+								</li>
+								
+								<li>
+									<div class="media">
+										<div class="media-left"> <i class="rt-icon2-mail highlight2 fontsize_18"></i> </div>
+										<div class="media-body greylinks">
+											<h5 class="media-heading grey">Email:</h5> <a href="mailto:jeyamnaturalfoods@gmail.com" style="color: blue;">jeyamnaturalfoods@gmail.com</a> </div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+			<footer class="page_footer ds color section_padding_top_100 section_padding_bottom_10">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center"> <a href="index.html" class="logo vertical_logo">
+                    <img src="images/logoo.png" alt="">
+                </a>
+				<ul class="topmargin_40 inline-content small-text semibold darklinks">
+					<li> <i class="fa fa-facebook" aria-hidden="true"></i> <a href="https://www.facebook.com/Jeyam-Natural-Foods-324805741457162/?modal=admin_todo_tour" class="soc-facebook text-icon">Facebook</a> </li>
+					<li> <i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://www.instagram.com/jeyam_industries_/" class="soc-instagram text-icon">Instagram</a> </li>
+					<li> <i class="fa fa-google" aria-hidden="true"></i> <a href="https://www.google.com/search?q=Jeyam+natural+Foods+-+Pure+Ghee,+Chekku+oil+and+Wil+Honey+Manufacturer+in+tamilnadu&stick=H4sIAAAAAAAAAA3LsQrCMBQF0EnxMy6Cm0JKqo2ugoogCA7Oz-SFhqYvEBtof8cvtdOZzmq53qhRf9TBaMveV3Wjm-qkRmea2u6PZMhY6w3_Fq87T9RDaCiZIi4puS92eJbMuLbMW5xb7rqCFCJIHN6ztyQ84UFSPNk5ckYQDNSHKOTKH3al9D5_AAAA&hl=en-GB&mat=CZ0CEUai_Bk4ElYBT5f1BpaFEoq7Ygp8ijSELLc8bUFN_aanppJ7NvfVtuIYPbxOhExskfIrm2xdw9W3JNiFoNcDEkSebLkfgViPozIUXRWHBXOIe5BUDaFYUDu1UoAtBg&authuser=0" class="soc-google text-icon">Google</a> </li>
+				</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<section class="ds color page_copyright section_padding_15 with_top_border_container">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="small-text big">Copyright © 2022<a href="https://www.digisailor.com/">&nbsp;Digisailor</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	
+</body>
+
+
+</html>
